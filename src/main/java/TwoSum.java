@@ -10,9 +10,6 @@ public class TwoSum {
      * 遍历问题数组每一个元素nums[i]，测试Map中师傅存在一个(target - nums[i])的key
      * 若存在且对应的Index不等于当前的元素本身(i)，则i与对应的index即是该问题的解
      *
-     * @param nums
-     * @param target
-     * @return
      */
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> numToIndexMap = new HashMap<>();
@@ -37,9 +34,6 @@ public class TwoSum {
      * 相较之前的算法，时间复杂度和空间复杂度都有所降低
      * 每次检查的是当前的元素和之前的某个元素是否能够组成解集
      * 每次检查后，将当前元素和索引加入Map中
-     * @param nums
-     * @param target
-     * @return
      */
     public int[] improveTwoSum(int[] nums, int target) {
         HashMap<Integer, Integer> valueIndexMap = new HashMap<>();
