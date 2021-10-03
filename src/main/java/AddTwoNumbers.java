@@ -4,6 +4,10 @@
 public class AddTwoNumbers {
     /**
      * 按加法竖式计算方法即可，注意进位
+     * 注意事项：1. 循环结束的判定条件要有carry的判断
+     * 出错的地方：
+     * 1. 循环结束条件未判断carry，导致最后有进位的情况少了一个节点
+     * 2. 返回值返回了l3.next,错把l3当作头指针，初始化是头指针，在运行过程中是动态指针，最后指向尾节点，所以要有个不变的头指针
      */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode h1 = new ListNode();
