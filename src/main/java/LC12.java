@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class LC12 {
     public String intToRoman(int num) {
         HashMap<Integer,String> hm = new HashMap<>();
-
+        //这里可以修改，不用map，使用一个数组与keys相对应，能提高效率
         hm.put(1,"I");
         hm.put(4,"IV");
         hm.put(5,"V");
