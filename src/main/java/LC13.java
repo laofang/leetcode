@@ -23,9 +23,9 @@ public class LC13 {
             //i + 1不要过界
             if(i + 1 < chars.length && hm.get(chars[i+1]) > hm.get(chars[i])) {
                 r -= hm.get(chars[i]);
-                continue;
+            } else{
+                r += hm.get(chars[i]);
             }
-            r += hm.get(chars[i]);
         }
         return r;
     }
