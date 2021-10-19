@@ -8,7 +8,7 @@
  * 4. 最后将nums[i]~nums[length-1]所有元素反转
  *
  */
-public class LC32 {
+public class LC31 {
     public void nextPermutation(int[] nums) {
         //nums.length 的长度为0或者为1,返回
         if(nums.length == 0 || nums.length == 1) {
