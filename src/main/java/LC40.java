@@ -2,6 +2,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Leetcode40题，组合总和II
+ * 关键字：回溯
+ * 主要思路：
+ * 1. 和上一题的思路基本相同，主要注意同一层次不要进行重复数字的尝试
+ */
 public class LC40 {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> res = new LinkedList<>();
