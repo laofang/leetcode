@@ -1,3 +1,5 @@
+import structure.Node;
+
 /**
  * Leetcode559题，N叉树的最大深度
  * 关键字：树、树深度、递归
