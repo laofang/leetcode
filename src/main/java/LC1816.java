@@ -3,6 +3,7 @@
  * 关键字：字符串、截取
  * 主要思路：
  * 1. 很简单，注意k大于单词数量的情况
+ *
  */
 public class LC1816 {
     public String truncateSentence(String s, int k) {
