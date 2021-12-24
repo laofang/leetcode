@@ -79,6 +79,7 @@ public class LC391 {
                     return false;
                 }
             }
+            l = r;
         }
         return true;
     }
