@@ -55,4 +55,5 @@ public class LC1219 {
             sum -= grid[cur[0]][cur[1]];
         }
     }
+    //TODO 1219题，黄金矿工，效率较低，有时间可以看一下怎么提高效率
 }
