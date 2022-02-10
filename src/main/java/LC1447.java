@@ -6,6 +6,7 @@ import java.util.List;
  * 关键字：数学、约数、辗转相除
  * 主要思路：
  * 1. 双重循环，分子、分母没有公约数，则可以组成一个 i/j
+ * 2. 字符串拼接使用StringBuilder效率有明显提高
  */
 public class LC1447 {
     public List<String> simplifiedFractions(int n) {
