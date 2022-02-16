@@ -9,6 +9,7 @@ import java.util.List;
  * 2. 行最小的，列最大的映射到一个二维数组计数
  * 3. 如果同一个位置访问两次，这个位置的数就是幸运数
  */
+
 public class LC1380 {
     public List<Integer> luckyNumbers (int[][] matrix) {
         int m = matrix.length;
