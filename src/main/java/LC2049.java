@@ -98,3 +98,4 @@ public class LC2049 {
         return (long)parents.length - 1;
     }
 }
+//TODO 2049题，中等题，统计最高分的节点数目，图解法需要再理解一下
