@@ -7,22 +7,28 @@ import java.util.Map;
  * 主要思路：
  * 1. map记录数字出现的次数
  * 2. 数字出现的次数 > n / 2，当前数字就是答案
+ * 优化：
+ * 优化了空间复杂度为O(1)
+ * 1. 同归于尽的思路，当前持有一个数字，如果下一个数字和当前相同，数量增加，否则减少，0的时候换遍历中的下一个数字
+ * 2. 最坏的情况，目标数字中的每一个与非目标数字抵消，那也至少会剩下一个目标数字
+ * 3. 也就是按这种算法，最后目标数字的数目 >= 1，其余数字都相互抵消掉了
  */
 public class LC169 {
     public int majorityElement(int[] nums) {
-        Map<Integer,Integer> map = new HashMap<>();
-        int ans = 0;
+        int count = 0;
+        int cur = 0;
         for (int num : nums) {
-            int count = map.getOrDefault(num,0);
-            if(count != -1) {
+            if(count == 0) {
+                cur = num;
+                count = 1;
+                continue;
+            }
+            if(num == cur) {
                 ++count;
-                if(count > nums.length / 2) {
-                    ans = num;
-                    break;
-                }
-                map.put(num,count);
+            } else {
+                --count;
             }
         }
-        return ans;
+        return cur;
     }
 }
