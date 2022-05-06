@@ -6,6 +6,7 @@
  * 2. 从left位置进行循环，如果nums[left] < t - 3000,left++
  * 3. right - left就是最终答案
  */
+
 public class LC933 {
     int[] nums;
     int left;
