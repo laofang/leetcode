@@ -7,20 +7,22 @@
  */
 public class LC283 {
     public void moveZeroes(int[] nums) {
-        if(nums.length<=1) return;
         int i = 0;
         int j = 0;
         while(i < nums.length) {
             if(nums[i] != 0) {
                 i++;
+                if(j < i) j = i;
                 continue;
             }
-            while(j < nums.length) {
-                if(nums[j] == 0) {
-                    j++;
-                    continue;
-                }
+            if(i >= nums.length) break;
+            while(j < nums.length && nums[j] == 0) {
+                j++;
+                continue;
             }
+            if(j >= nums.length) break;
+            nums[i] = nums[j];
+            nums[j] = 0;
         }
     }
 }
