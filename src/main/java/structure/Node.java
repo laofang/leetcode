@@ -3,8 +3,11 @@ package structure;
 import java.util.List;
 
 public class Node {
+
+
     public List<Node> children;
     public Integer val;
+    public Node next;
 
     public boolean val1;
     public boolean isLeaf;
@@ -28,6 +31,10 @@ public class Node {
         this.topRight = null;
         this.bottomLeft = null;
         this.bottomRight = null;
+    }
+
+    public Node(int val) {
+        this.val = val;
     }
 
     public Node(boolean val, boolean isLeaf, Node topLeft, Node topRight, Node bottomLeft, Node bottomRight) {
