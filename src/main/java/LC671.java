@@ -23,5 +23,6 @@ public class LC671 {
             return ans;
         }
         return -1;
+
     }
 }
