@@ -32,3 +32,4 @@ public class LC1224 {
         return ans;
     }
 }
+
