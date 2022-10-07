@@ -8,7 +8,6 @@ public class LC1800 {
     public int maxAscendingSum(int[] nums) {
         int i = 0;
         int max = 0;
-
         while(i < nums.length) {
             int sum = nums[i];
             ++i;
