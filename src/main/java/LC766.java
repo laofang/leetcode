@@ -20,6 +20,7 @@ public class LC766 {
             int y = j;
             while(x < m && y < n) {
                 if(matrix[x++][y++] != matrix[0][j]) return false;
+
             }
         }
         return true;
