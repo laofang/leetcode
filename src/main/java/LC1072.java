@@ -29,3 +29,4 @@ public class LC1072 {
         return res;
     }
 }
+
