@@ -10,6 +10,7 @@ import java.util.Map;
 public class LC2475 {
     public int unequalTriplets(int[] nums) {
         Map<Integer,Integer> cntMap = new HashMap<>();
+
         for(int i = 0; i < nums.length; i++) {
             int cnt = cntMap.getOrDefault(nums[i],0);
             cntMap.put(nums[i],cnt+1);
