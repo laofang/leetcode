@@ -2,7 +2,7 @@
  * Leetcode1299题，将每个元素替换为右侧最大元素
  * 关键字：数组
  * 主要思路：
- * 1. 从后往前，保存当前最大值，逐一赋值
+ * 1. 从后往前，保存当前最大值，逐一赋值，注意最后一位是-1
  */
 public class LC1299 {
     public int[] replaceElements(int[] arr) {
