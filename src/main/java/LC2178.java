@@ -5,7 +5,8 @@ import java.util.List;
  * Leetcode2178题，拆分成最多数目的正偶数之和
  * 关键字：贪心、数学、回溯
  * 主要思路：
- * 1.
+ * 1. 从2开始，逐个偶数求和，直到finalSum剩余的小于当前最大偶数
+ * 2. 将剩余的finalSum + 上最后一个偶数元素作为最后一个元素
  */
 public class LC2178 {
     public List<Long> maximumEvenSplit(long finalSum) {
