@@ -4,6 +4,7 @@
  * 主要思路：
  * 1. 比较简单的动态规划题
  * 2. dp[i] = max(dp[i-2] + nums[i],dp[i-1])
+ *
  */
 public class LC198 {
     public int rob(int[] nums) {
